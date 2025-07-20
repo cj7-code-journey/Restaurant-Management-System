@@ -1,0 +1,114 @@
+{%extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+{%block content%}
+<html lang="en">
+
+<body class="">
+    <main>
+        <header class="bg-danger-subtle text-dark text-center py-2">
+            <h1>Contact us</h1>
+            <img src="{%static 'img\contactus.webp'%}" alt="">
+        </header>
+        <section>
+            <div class="text-center">
+                <div class="row p-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="font-monospace"> STAY IN <br>TOUCH!</h1>
+                    </div>
+                    <div class="col-lg-6 p-5 border border-danger border-5">
+                        <p class="mb-lg-0 fs-2 fw-bold">Order Online</p>
+                        <p class="mb-lg-0"><i class="fa-solid fa-angle-up"></i><i class="fa-solid fa-angle-down"></i><i
+                                class="fa-solid fa-angle-up"></i><i class="fa-solid fa-angle-down"></i></p>
+                        <p>For online food order please contact or email now.</p>
+                        <p>Cash On Delivery Acceptable</p>
+                        <p>flavorsfeast@example.com</p>
+                        <p>123-456-7890</p>
+                    </div>
+                </div>
+                <div class="row p-5 text-center">
+                    <div class="col-lg-6 bg-dark-subtle border border-danger border-5">
+                        <div class="container-fluid">
+                            <p class="mb-lg-0 fs-2 fw-bold">For Inquiries</p>
+                            <p class="mb-lg-0"><i class="fa-solid fa-angle-up"></i><i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i><i
+                                    class="fa-solid fa-angle-down"></i></p>
+                            <p>We’re here to assist you with any questions or concerns you may have.</p>
+
+                            <form action="{%url 'insertcontact' %}" method="post" class="row g-3">
+                                {%csrf_token%}
+                                <div class="col-lg-12 mb-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="First name"
+                                            aria-label="First name" name="Fname">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 mb-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Your Email" name="email">
+                                        <label for="Email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="inputPhone4"
+                                            placeholder="Your Phone No." name="phone">
+                                        <label for="email">Your Phone No.</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-6">
+                                    <div class="form-floating">
+                                        <select class="form-select border border-2" name="Queries" required
+                                            aria-label="select example">
+                                            <option selected>Choose an Option</option>
+                                            <option>Delivary related queries</option>
+                                            <option>Reservation related queries</option>
+                                            <option>Offer related queries</option>
+                                            <option>Payment related issue</option>
+                                            <option>Technical issue</option>
+                                            <option>Others</option>
+                                        </select>
+                                        <label for="subject" class="form-label">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-6">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea" name="massage"></textarea>
+                                        <label for="Massage">Write Here About Your Querie in Full Detailed...</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="border border-danger border-5">
+                            <p class="mb-lg-0 fs-2 fw-bold">Location & Hours</p>
+                            <p class="mb-lg-0"><i class="fa-solid fa-angle-up"></i><i
+                                    class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i><i
+                                    class="fa-solid fa-angle-down"></i></p>
+                            <p>500 Terry Francine Street,
+                                San Francisco, CA 94158</p>
+                            <p>Mon. to Fri. 9:00 AM - 10:00 PM<br>
+                                Saturday: 10:00 AM - 11:00 PM<br>
+                                Sunday: 10:00 AM - 9:00 PM</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111081.3498319669!2d75.03040689999997!3d29.53698425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39114db0893d723d%3A0xc51125be998c4f95!2sSirsa%2C%20Haryana%20125055!5e0!3m2!1sen!2sin!4v1730460815462!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+{%endblock%}

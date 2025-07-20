@@ -1,0 +1,462 @@
+{%extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+{%block content%}
+<html lang="en">
+
+<body>
+    <main>
+        <div class="container-xxl position-relative p-0">
+            <div class="container-xxl py-4 bg-dark hero-header mb-5">
+                <div class="container my-3 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start animated animatedFadeInUp fadeInUp">
+                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our <br> Delicious Meal</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Welcome to <b>Flavors Feast</b>, where
+                                culinary excellence meets a cozy ambiance. Discover our delicious menu and book your
+                                table today!</p>
+                            <a href="/table"
+                                class="btn btn-outline-danger py-sm-3 px-sm-5 border-bottom border-danger border-3">Book
+                                A Table</a>
+
+                        </div>
+                        <div class="col-lg-6 text-center  text-lg-end overflow-hidden">
+                            <img src="{%static 'img/rotate.png'%}" width="490px" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section start -->
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 animated animatedFadeInUp fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa-solid fa-user-tie fa-3x text-danger mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>Our Master Chefs create culinary masterpieces with passion and expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 animated animatedFadeInUp fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa-solid fa-utensils fa-3x text-danger mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>We serve high-quality, fresh ingredients in every delicious dish prepared.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 animated animatedFadeInUp fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa-solid fa-cart-plus fa-3x text-danger mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>Convenient online ordering for your favorite meals, delivered to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 animated animatedFadeInUp fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa-solid fa-headset fa-3x text-danger mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>Enjoy our exceptional services anytime, day or night, 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service section end -->
+        <hr>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center" id="about">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-gluid rounded w-100 hvr-grow" src="{%static 'img/table0.jpg'%}" alt="">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-gluid rounded w-75 hvr-grow" src="{%static 'img/salet.jpg'%}"
+                                    style="margin-top: 17%;" alt="">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-gluid rounded w-75 hvr-grow" src="{%static 'img/samosa.jpg'%}" alt="">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-gluid rounded w-100 hvr-grow" src="{%static 'img/cake.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-danger fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome To <i class="fa-solid fa-utensils text-danger me-2"></i> Flavors Feast
+                        </h1>
+                        <p class="mb-4">At Flavors Feast, we blend tradition and innovation to create unforgettable
+                            dining experiences. Our passion for excellence drives us to craft dishes that delight the
+                            senses and bring people together in a warm, inviting atmosphere.</p>
+                        <p class="mb-4">Our dedicated team uses the freshest ingredients to ensure every dish is a
+                            masterpiece. We believe in sustainability and community involvement, making a positive
+                            impact through our culinary creations. Join us and taste the difference that passion and
+                            quality make.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-item-center border-start border-5 border-danger px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-danger mb-0">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experince</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-item-center border-start border-5 border-danger px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-danger mb-0">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="/about" class="btn btn-danger py-3 px-5 mt-2">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About section end -->
+        <hr>
+        <div class="container-xxl py-5">
+            <div id="menu" class="container">
+                <div class="text-center wow animated animatedFadeInUp fadeInUp">
+                    <h5 class="section-title ff-secondary text-center text-danger fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fedeInup" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa-solid fa-coffee fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Healthy</small>
+                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa-solid fa-burger fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Lunch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa-solid fa-utensils fa-2x text-danger"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="teb-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{%static 'img/burger.jpg'%}" style="width: 25%;"
+                                            class="flex-shrink-0 img-fluid rounded" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Burger</span>
+                                                <span class="text-danger">$70</span>
+                                            </h5>
+                                            <small class="fst-italic">
+                                                Spicy, flavorful burgers with fresh toppings and sauces.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{%static 'img/cake.jpg'%}" style="width: 25%;"
+                                            class="flex-shrink-0 img-fluid rounded" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cake</span>
+                                                <span class="text-danger">$159</span>
+                                            </h5>
+                                            <small class="fst-italic">
+                                                Decadent cakes, perfect for any celebration or treat.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{%static 'img/samosa.jpg'%}" style="width: 25%;"
+                                            class="flex-shrink-0 img-fluid rounded" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Samosa</span>
+                                                <span class="text-danger">$99</span>
+                                            </h5>
+                                            <small class="fst-italic">
+                                                Crispy, golden samosas filled with spiced potatoes and peas.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="{%static 'img/coffee2.jpg'%}" style="width: 25%;"
+                                            class="flex-shrink-0 img-fluid rounded" alt="">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Coffee</span>
+                                                <span class="text-danger">$59</span>
+                                            </h5>
+                                            <small class="fst-italic">
+                                                Rich, aromatic coffee brewed to perfection every time.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center m-4 wow animated animatedFadeInUp fadeInUp">
+                    <a href="/menu" class="btn btn-danger w-100 py-3 px-5">Check Full Menu</a>
+                </div>
+            </div>
+        </div>
+        <section>
+            <!-- order & table section -->
+            <div class="row">
+                <div class="col-md-6 bg-dark align-items-center text-center">
+                    <div class="p-5">
+                        <h4 class="mb-2 text-start text-danger fw-normal">Order Online</h4>
+                        <h1 class="text-white text-start mb-4">
+                            Order Online Delicius Food
+                        </h1>
+                        <img src="{%static 'img\contact.jpg'%}" style="width: 100%;height: 42vh;">
+
+                        <div class="row g-3 m-2">
+                            <div class="col-4 text-end align-items-center">
+                                <p class="my-0">
+                                    <i class="fa-solid fa-shop fa-3x" style="color: #ffffff;"></i>
+                                </p>
+                                <p class="my-0">
+                                    <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                                </p>
+                            </div>
+                            <div class="col-4 text-center align-self-center">
+                                <i class="fa-solid fa-gift fa-3x" style="color: #ffffff;"></i>
+                                <p class="my-0">
+                                    <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                                </p>
+
+                            </div>
+                            <div class="col-4 text-start align-items-center">
+                                <p class="my-0">
+                                    <i class="fa-solid fa-motorcycle fa-3x" style="color: #ffffff;"></i>
+                                </p>
+                                <p class="my-0">
+                                    <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-up" style="color: #ffffff;"></i><i
+                                        class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                                </p>
+                            </div>
+                            <div class="col-12 text-center align-self-center">
+                                <h5 class="text-white">
+                                    Our Foods Are Coming Your Way
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="/contact"
+                            class="btn btn-outline-danger w-100 py-3 border-bottom border-danger border-3">Order
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 bg-dark align-items-center">
+                    <div class="p-5">
+                        <h4 class="section-title ff-secondary text-start text-danger fw-normal">
+                            Reservation
+                        </h4>
+                        <h1 class="text-white mb-4">
+                            Book A Table Online
+                        </h1>
+                        <form action="">
+                            <div class="row g-3">
+                                <div class="col-6 mb-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            placeholder="Your name" disabled>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="Your Email" disabled>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating date" id="date3">
+                                        <input type="date" class="form-control" name="date" id="date"
+                                            placeholder="Date & Time" data-target="#date3" data-toggle="datetimpicker"
+                                            itemid="datetime" disabled>
+                                        <label for="date">Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating time" id="time3">
+                                        <input type="time" class="form-control" name="date" id="date" placeholder="Time"
+                                            data-target="#time3" data-toggle="datetimpicker" itemid="time" disabled>
+                                        <label for="time">Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1" disabled>
+                                            <option value="1">People 1</option>
+                                            <option value="2">People 2</option>
+                                            <option value="3">People 3</option>
+                                            <option value="4">People 4</option>
+                                            <option value="5">People 5</option>
+                                        </select>
+                                        <label for="select1">No. Of People</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name="" id="massage"
+                                            placeholder="Special Request" style="height: 100px;" disabled></textarea>
+                                        <label for="Special Request">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="/table"
+                                        class="btn btn-outline-danger w-100 py-3 border-bottom border-danger border-3">Book
+                                        Now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center my-5">
+                <h3 class="text-center  mb-4">What our users say about us</h3>
+                <p>Read our customers' reviews to learn about their experiences with our service</p>
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <img src="{%static 'img/testimonial-1.jpg'%}" alt="Person 1">
+                                        <p>“The product quality is top-notch, and the staff is incredibly helpful. I
+                                            always have
+                                            a
+                                            great experience and look forward to coming back.”</p>
+                                        <h5>Emma Odinson</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimonial-card focus">
+                                        <img src="{%static 'img/testimonial-2.jpg'%}" alt="Person 2">
+                                        <p>“If you’re a foodie like me, you’ll love this place! The menu has a fantastic
+                                            selection
+                                            of dishes, and we loved everything we tried. The flavors are authentic and
+                                            the
+                                            portions
+                                            are generous.”</p>
+                                        <h5>Dian Annakin</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <img src="{%static 'img/testimonial-3.jpg'%}" alt="Person 3">
+                                        <p>“I had a fantastic experience shopping here. The website is easy to navigate,
+                                            and my
+                                            order arrived quickly. Highly recommend!”</p>
+                                        <h5>Kyle Smith</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <img src="{%static 'img/testimonial-2.jpg'%}" alt="Person 1">
+                                        <p>“The product quality is top-notch, and the staff is incredibly helpful. I
+                                            always have
+                                            a
+                                            great experience and look forward to coming back.”</p>
+                                        <h5>Emma Odinson</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimonial-card focus">
+                                        <img src="{%static 'img/testimonial-3.jpg'%}" alt="Person 2">
+                                        <p>“If you’re a foodie like me, you’ll love this place! The menu has a fantastic
+                                            selection
+                                            of dishes, and we loved everything we tried. The flavors are authentic and
+                                            the
+                                            portions
+                                            are generous.”</p>
+                                        <h5>Dian Annakin</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <img src="{%static 'img/testimonial-4.jpg'%}" alt="Person 3">
+                                        <p>“I had a fantastic experience shopping here. The website is easy to navigate,
+                                            and my
+                                            order arrived quickly. Highly recommend!”</p>
+                                        <h5>Kyle Smith</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+{%endblock%}

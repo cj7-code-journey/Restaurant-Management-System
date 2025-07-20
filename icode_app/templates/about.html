@@ -1,0 +1,136 @@
+{%extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <body>
+
+        <header class="bg-info-subtle text-dark text-center py-2">
+            <h1>About Us</h1>
+            <img src="{%static 'img/about0.webp'%}" class="img-fluid" alt="About Us Image">
+        </header>
+
+        <!-- Section 2: Our Story -->
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>
+                        Our journey began with a passion for creating delicious and memorable dining experiences.
+                        Over
+                        the years, we have grown from a small family-owned restaurant to a beloved culinary
+                        destination.
+                        Our commitment to quality, authenticity, and customer satisfaction has been the cornerstone
+                        of
+                        our success. We take pride in using the freshest ingredients and traditional recipes to
+                        bring
+                        you the best flavors from around the world. Whether you're here for a casual meal or a
+                        special
+                        occasion, we strive to make every visit unforgettable. Join us as we continue to share our
+                        love
+                        for food and hospitality with our community.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{%static 'img/chefs.webp'%}" class="img-fluid" alt="Our Story Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Meet the Chef -->
+        <section class="container my-5">
+            <h2 class="text-center my-5">Meet the Chef</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{%static 'img/chefs-01.jpg'%}" class="card-img-top" alt="Chef 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Caines</h5>
+                            <p class="card-text">Bio: Michael Caines is an American restaurateur, author, and television
+                                personality. He is best known for his Food Network shows, including “Diners, Drive-Ins
+                                and Dives” and “Guy’s Grocery Games.” Fieri’s energetic personality and love for bold
+                                flavors have made him a beloved figure in the culinary world. Specialties: American
+                                comfort food, barbecue, and Tex-Mex cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{%static 'img/chefs-02.jpg'%}" class="card-img-top" alt="Chef 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Anthony Bourdain</h5>
+                            <p class="card-text">Bio: Anthony Bourdain is a celebrated British chef from Devon, England.
+                                He is known for his refined cooking style and has worked in some of the UK’s top
+                                kitchens. In 2017, he opened Lympstone Manor, a luxurious country house and hotel in
+                                East Devon. Caines has received numerous accolades for his culinary skills. Specialties:
+                                Modern British cuisine, French cuisine, and fine dining</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{%static 'img/chefs-03.jpg'%}" class="card-img-top" alt="Chef 3">
+                        <div class="card-body">
+                            <h5 class="card-title">John Carlson 3</h5>
+                            <p class="card-text">Bio: John Carlson is a British chef, restaurateur, and television
+                                personality. He is known for his fiery temper and strict demeanor on cooking shows like
+                                “Hell’s Kitchen,” “MasterChef,” and “Kitchen Nightmares.” Ramsay has earned a total of
+                                16 Michelin stars throughout his career and is one of the most well-known chefs in the
+                                world. Specialties: Modern European cuisine, British cuisine, and fine dining.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Learn More -->
+        <section class="container my-5 text-center">
+            <div class="row py-2 bg-primary">
+                <h2>Learn More</h2>
+            </div>
+            <div class="row py-2 bg-primary-subtle">
+                
+           
+            <p>
+                Interested in learning more about our story, philosophy, and practices? Click the button below to
+                explore our blog, read customer testimonials, and stay updated with our latest news and events.
+            </p>
+            <div>
+            <a href="" class="btn btn-outline-danger btn-social"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="" class="btn btn-outline-dark btn-social"><i
+                class="fa-brands fa-x-twitter"></i></a>
+        <a href="" class="btn btn-outline-primary btn-social"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="" class="btn btn-outline-danger btn-social"><i class="fa-brands fa-youtube"></i></a></div>
+    </div>
+        </section>
+        <section>
+            <!-- Social Media Section -->
+            <div class="container-fluid text-center">
+                <h2>Follow</h2>
+                <p class="social-handle">@FlavorsFeast</p>
+                <div class="row social-images">
+                    <div class="col-md-3">
+                        <img src="{%static 'img\01.jpg'%}" alt="Noodles" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="{%static 'img\02.jpg'%}" alt="Lanterns" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="{%static 'img\03.jpg'%}" alt="Steam Pot" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="{%static 'img\04.jpg'%}" alt="Noodles" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
+{%endblock%}

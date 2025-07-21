@@ -20,7 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ['your-service-name.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['restaurant-management-system-z8h3.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 

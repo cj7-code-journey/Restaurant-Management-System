@@ -1,7 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "Applying database migrations..."
-python manage.py migrate --noinput
+# Exit on error
+set -e
+
+echo "Applying migrations..."
+python manage.py migrate
 
 echo "Collecting static files..."
 python manage.py collectstatic --noinput

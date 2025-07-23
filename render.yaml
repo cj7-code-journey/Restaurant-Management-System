@@ -3,9 +3,7 @@ services:
     name: flavors-feast
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: |
-      python manage.py migrate
-      gunicorn icode.wsgi:application
+    startCommand: ./start.sh
     envVars:
       - key: DEBUG
         value: False

@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-echo "Running migrations..."
-python manage.py migrate
+echo "Applying database migrations..."
+python manage.py migrate --noinput
+
+echo "Collecting static files..."
+python manage.py collectstatic --noinput
 
 echo "Starting Gunicorn..."
-gunicorn icode.wsgi:application
+gunicorn icode.wsgi:application --bind 0.0.0.0:$PORT
